@@ -11,6 +11,6 @@ git diff status보다 더 구체적으로 변경상황을 보여줌
 (j 아래스크롤, k위 스크롤, :q 닫기)
 git init 생성
 git add . 파일 담기
-git commit -m "massage" 메시지와 함께 commit 작성하기
+git commit -m "massage" 메시지와 함께 commit 작성하기 으으으응
 
 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
