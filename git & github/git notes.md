@@ -16,4 +16,4 @@
 | **git push(pull) origin main** | push or pull 하기                                                                 |
 | **git stash**                  | 헷갈린당...,                                                                      |
 
-[마크다운 명령어](https://gist.github.com/ihoneymon/652be052a0727ad59601,"markdown")
+[마크다운 명령어](https://gist.github.com/ihoneymon/652be052a0727ad59601)
