@@ -4,12 +4,13 @@
 
 ## 사용법
 
-**.gitignore** 생성하여 git에 맡기지 않을 파일을 기재  
-**git status** 현재 폴더의 상태을 보여줌  
-**git diff** status보다 더 구체적으로 변경상황을 보여줌 (j 아래스크롤, k위 스크롤, :q 닫기)  
-**git init** 생성  
-**git add** 파일 담기  
-**git commit** -m "massage" 메시지와 함께 commit 작성하기  
-**git clone** 불러오기  
-**git push(pull) origin main** push or pull 하기  
-**git stash** 헷갈린당...,
+|명령어|설명|
+|**.gitignore**|생성하여 git에 맡기지 않을 파일을 기재|
+|**git status**|현재 폴더의 상태을 보여줌|
+|**git diff**|status보다 더 구체적으로 변경상황을 보여줌 (j 아래스크롤, k위 스크롤, :q 닫기)|
+|**git init**|생성|  
+|**git add**|파일 담기|
+|**git commit -m "massage"**| 시지와 함께 commit 작성하기|
+|**git clone**|불러오기|
+|**git push(pull) origin main**|push or pull 하기|
+|**git stash**|헷갈린당...,|
