@@ -2,8 +2,8 @@
 
 ## 역사
 
-1990년도 팀 버너슬이 제작. 이 전 선행 기술의 영향을 받음.
-<img src="htmlHistory.png" width="400" height="80"></img>
+1990년도 팀 버너슬이 제작. 이 전 선행 기술의 영향을 받음.  
+<img src="htmlHistory.png" width="400" height="60"></img>
 
 ## 문법
 
