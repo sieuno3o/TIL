@@ -180,3 +180,21 @@ p {
   line-height: 1.3;
 }
 ```
+
+#### 축약
+
+```css
+<style>
+  #type1{
+    font-size:5rem;
+    font-family: arial, verdana, "Helvetica Neue", serif;
+    font-weight: bold;
+    line-height: 2;
+  }
+  #type2{
+    font:bold 5rem/2 arial, verdana, "Helvetica Neue", serif;
+  }
+</style>
+```
+
+## 상속
