@@ -90,7 +90,7 @@ css는 뒤에 나오는 코드를 우선으로 실행
   a:active{ //누른 상태에서 초록색
     color:green;
   }
-  input:focus{ //탭 눌럿을 때.. 어쩌구.. 무조건 맨 뒤에 적어줌
+  input:focus{ //탭 눌럿을 때.. 어쩌구.. 무조건 맨 뒤에 적어줘야함
     background-color:black;
     color:white;
   }
