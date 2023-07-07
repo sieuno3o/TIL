@@ -44,13 +44,13 @@
 ```css
 <head>
   <style>
-    ul li{        조상 자손 선택자
+    ul li{      /* 조상 자손 선택자 */
       color:red;
     }
-    #lecture>li{  부모 자식 선택자
+    #lecture>li{/* 부모 자식 선택자 */
       border:1px solid red;
     }
-    ul,ol{        ui, oi 동시선택
+    ul,ol{      /* ui, oi 동시선택 */
       background-color: powderblue;
     }
 </style>
@@ -80,19 +80,19 @@ css는 뒤에 나오는 코드를 우선으로 실행
 
 ```css
 <style>
-  a:link{       방문하지 않은 사이트
+  a:link{       /* 방문하지 않은 사이트 */
     color:black;
   }
-  a:visited{    방문한 사이트 빨간색
+  a:visited{    /* 방문한 사이트 빨간색 */
     color:red;
   }
-  a:hover{      커서 올렸을 때 노란색
+  a:hover{      /* 커서 올렸을 때 노란색 */
     color:yellow;
   }
-  a:active{     누른 상태에서 초록색
+  a:active{     /* 누른 상태에서 초록색 */
     color:green;
   }
-  input:focus{  탭 눌럿을 때.. 어쩌구.. 무조건 맨 뒤에 적어줘야함
+  input:focus{  /* 탭 눌럿을 때.. 어쩌구.. 무조건 맨 뒤에 적어줘야함 */
     background-color:black;
     color:white;
   }
@@ -139,11 +139,11 @@ child-first 첫번째로 등장하는 것만 선택
 ```css
 <style>
   p{
-    text-align: left;      왼쪽 정렬
-    text-align: center;    가운데 정렬
-    text-align: right;     오른쪽 정렬
-    text-align: justify;   오른쪽 왼쪽 공백 없이...
-    bolder:1px solid gray; 테두리 1px 회색
+    text-align: left;      /* 왼쪽 정렬 */
+    text-align: center;    /* 가운데 정렬 */
+    text-align: right;     /* 오른쪽 정렬 */
+    text-align: justify;   /* 오른쪽 왼쪽 공백 없이... */
+    bolder:1px solid gray; /* 테두리 1px 회색 */
   }
 </style>
 ```
@@ -197,4 +197,30 @@ p {
 </style>
 ```
 
+<br>
+
 ## 상속
+
+```css
+<style>
+  html{color:red;}
+  #select{color:black;}
+  body{border:1px solid red;}
+</style>
+<body>
+  <ul>
+    <li>html</li>
+    <li>css</li>
+    <li id="select">javascript</li>
+  </ul>
+</body>
+```
+
+html의 색을 red로 지정 -> 모든 글자 색 red  
+하지만 select id를 가진 속성값만 black으로 표시.
+
+[상속하는 속성과 상속하지 않는 속성](https://www.w3.org/TR/CSS21/propidx.html)
+
+<br>
+
+## Cascading
