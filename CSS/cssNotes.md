@@ -71,3 +71,45 @@
   </ol>
 </body>
 ```
+
+### 가상 클래스 선택자
+
+css는 뒤에 나오는 코드를 우선으로 실행
+
+```css
+<style>
+  a:link{ //방문하지 않은 사이트
+    color:black;
+  }
+  a:visited{ //방문한 사이트 빨간색
+    color:red;
+  }
+  a:hover{ //커서 올렸을 때 노란색
+    color:yellow;
+  }
+  a:active{ //누른 상태에서 초록색
+    color:green;
+  }
+  input:focus{ //탭 눌럿을 때.. 어쩌구.. 무조건 맨 뒤에 적어줌
+    background-color:black;
+    color:white;
+  }
+</style>
+  <a href = "사이트"> 방문함 </a>
+  <a href = "사이트2"> 방문안함</a>
+  <input type = "text">
+```
+
+### 추가 선택자
+
+[게임으로 선택자 공부하기](https://flukeout.github.io/)
+
+```
+* 모든 것 선택
++ 옆에 있는 것 하나 선택
+~ 여러개 동시에 선택
+> 오른쪽 바로 밑에 있는 왼쪽만 선택
+child-first 첫번째로 등장하는 것만 선택
+...
+무수히 많음 ㅠ ㅠ 게임으로 공부해보고 검색도 해보고 하기...
+```
