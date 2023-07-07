@@ -201,6 +201,8 @@ p {
 
 ## 상속
 
+HTML의 element 디자인 시, 어떤 property값을 줘서 효과를 주게 되면 element에 속해있는 하위의 element가 그 속성을 이어받게 되는 성질
+
 ```css
 <style>
   html{color:red;}
@@ -223,4 +225,32 @@ html의 색을 red로 지정 -> 모든 글자 색 red
 
 <br>
 
-## Cascading
+## _Cascading_
+
+여러개의 스타일 중복 시, 우선순위를 정해 스타일 적용시킴
+
+```css
+<style>
+  li{color:red;}
+  #idsel{color:blue;}
+  .classsel{color:green;}
+</style>
+  <li id="idsel" class="classsel" style="color:powderblue">
+    css
+  </li>
+```
+
+위 코드에서의 우선순위는 어떻게 되는가?
+
+1. style 속성
+2. id selector
+3. class selector
+4. tag selector
+
+구체적이고 명시적일수록 우선순위가 높음
+
+```css
+li {
+  color: red !important; /* inportant 사용시 무조건 우선 */
+}
+```
