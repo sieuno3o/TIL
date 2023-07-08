@@ -254,3 +254,26 @@ li {
   color: red !important; /* inportant 사용시 무조건 우선 */
 }
 ```
+
+<br>
+
+## inline & block
+
+```css
+<head>
+  <meta charset="utf-8">
+  <style>
+      h1,a{border:1px solid red;}
+      h1{display: inline;}   /* 화면 일부만 차지 */
+      a{display:block;}      /* 화면 전체를 사용 */
+  </style>
+</head>
+<body>
+  <h1>Hello world</h1>
+  안녕하세요. <a href="https://opentutorials.org">생활코딩</a>입니다.
+</body>
+```
+
+<br>
+
+## Box Model
