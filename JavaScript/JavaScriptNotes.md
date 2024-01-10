@@ -124,3 +124,51 @@ apple 이름의 class 글자 색이 검정색으로 바뀜.
 </script>
 ```
 [배열 관련 메서드](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array)
+
+<br>
+
+## 배열 반복문 활용
+```html
+<script>
+  var alist = document.querySelectorAll('a');
+  var i = 0;
+  while(i < alist.length){
+    alist[i].style.color = 'blue';
+    i = i + 1;
+}
+</script>
+```
+<br>
+
+## 함수
+```html
+<script>
+  function onePlusOne(){
+    document.write(1+1+'<br>');
+  }
+  onePlusOne();
+  function sum(left, right){
+    document.write(left+right+'<br>');
+  }
+  function sumColorRed(left, right){
+    document.write('<div style="color:red">'+(left+right)+'</div><br>');
+  }
+  sum(2,3); // 5
+  sumColorRed(2,3); // 5
+</script>
+
+<h2>Return</h2>
+<script>
+  function sum2(left, right){ 
+    return left+right;
+  }
+  document.write(sum2(2,3)+'<br>');
+  document.write('<div style="color:red">'+sum2(2,3)+'</div>');
+  document.write('<div style="font-size:3rem;">'+sum2(2,3)+'</div>');
+</script>
+```
+
+<br>
+
+
+
