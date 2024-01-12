@@ -94,7 +94,7 @@ hi
 hi
 ```
 
-- range 문법의 기본구조 : \*\*for 변수 in range(시작 번호, 마지막 번호, 증가값)
+- range 문법의 기본구조 : `for 변수 in range(시작 번호, 마지막 번호, 증가값)`
 
 ```py
 >>> for i in rnage (9, 1, -2):
