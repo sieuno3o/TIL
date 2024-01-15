@@ -363,3 +363,92 @@ for k, v in OrderedDict(sorted(d.items(), key=sort_by_key)).items():
 
 - 딕셔너리 변수 생성 시 키에 기본값 지정
 - 새로운 키 생성시 별다른 조치 없이 새로운 값 생성 가능
+
+```py
+from collections import defaultdict
+
+d = defaultdict (lambda: 0) # default 값을 0으로 설정
+print(d["first"])
+```
+
+    0
+
+- 아래 코드에서는 변수 d가 defaultdict 타입으로 선언하면서 초깃값을 리스트로 선언됨.
+- 이로인해 새로운 키 값이 없더라도 별도로 오류가 발생하지 않음. 일반적인 dict에 비해 코드수를 줄일 수 있는 큰 장점을 가짐!
+
+```py
+from collections import defaultdict
+
+s = [('yellow', 1), ('blue', 2), ('yellow', 3), ('blue', 4), ('red', 1)]
+d = defaultdict(list)
+for k, v in s:
+    d[k].append(v)
+
+print(d.items())
+[('blue', [2, 4]), ('red', [1]), ('yellow', [1, 3])]
+```
+
+    dict_items([('yellow', [1, 3]), ('blue', [2, 4]), ('red', [1])])
+
+### Counter 모듈
+
+- 시퀀스 자료형의 데이터 값의 개수를 딕셔너리 형태로 반환하는 방법
+- 리스트나 문자열과 같은 시퀀드 자료형에 저장된 요소 중에서 같은 값이 몇 개 있는지 그 개수를 반환함
+
+```py
+>>> from collections import Counter
+
+>>> text = list("gallahad")
+>>> text
+['g', 'a', 'l', 'l', 'a', 'h', 'a', 'd']
+
+>> c = Counter (text)
+>> с
+Counter ({'a': 3, 'l': 2, 'g': 1, 'h': 1, 'd': 17})
+
+>>> c["a"] # 특정 텍스트의 개수 출력 가능
+3
+```
+
+- 시퀀스 자료형의 데이터를 세는 역할도 하지만, 딕셔너리 형태나 키워드 형태의 매개변수를 이용하여 Counter를 생성할 수 있음
+
+```py
+# 딕셔너리 형태로 Counter 객체 생성 방법
+>>> from collections import Counter
+
+>>> C = Counter ({'red': 4, 'blue': 2})
+>>> print(c)
+Counter ({'red': 4, 'blue': 2})
+>>> print(list(c.elements()))
+['red', 'red', 'red', 'red', 'blue', 'blue']
+```
+
+```py
+# 키워드 형태의 매개변수를 사용하여 Counter 생성
+# 매개변수의 이름 key, 실제 값 value로 함
+>>> from collections import Counter
+
+>>> c = Counter(cats = 4, dogs = 8)
+>>> print(c)
+Counter ({'dogs': 8, 'cats': 4})
+>>> print(list(c.elements()))
+['cats', 'cats', 'cats', 'cats', 'dogs', 'dogs', 'dogs', 'dogs', 'dogs', 'dogs', 'dogs', 'dogs']
+```
+
+- 이 외에도 Counter는 기본 사칙원산, OR, AND, 집합연산 등을 지원함
+
+### namedtuple 모듈
+
+- 튜플 형태로 데이터 구조체를 저장하는 방법
+
+```py
+>>> from collections import namedtuple
+
+>>> Point = namedtuple('Point'. ['x', 'y'])
+>>> p = Point(11, y=22)
+>>> p
+Point(x=11, y=22)
+>>> p.x, p.y # 값을 불러냄
+(11, 22
+>>> print(p[0] + p[1]) # 인덱스에는 이름이 들어간 순서대로 값이 저장됨
+```
