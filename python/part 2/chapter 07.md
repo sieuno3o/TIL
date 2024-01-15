@@ -24,7 +24,9 @@
 ### 스택
 
 - 스택: Last In First Out (LIFO), 마지막에 들어간 데이터가 가장 먼저 나오는 형태
-  <img src="img/stack.png" width=400>
+
+<img src="img/stack.png" width=400>
+
 - 스택에 데이터를 저장하는 것 `push`, 데이터를 추출하는 것 `pop`
 - 파이썬에서는 리스트를 사용하여 스택 구현
 
@@ -42,7 +44,8 @@
 ## 큐
 
 - 큐: First In First Out, 먼저 들어간 데이터가 먼저 나오는 형태
-  <img src="img/queue.png" width=300>
+
+<img src="img/queue.png" width=300>
 
 ```py
 >>> a = [1, 2, 3, 4, 5]
