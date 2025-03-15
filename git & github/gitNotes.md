@@ -11,7 +11,7 @@
 | **git diff**                   | status보다 더 구체적으로 변경상황을 보여줌<br>(j 아래스크롤, k위 스크롤, :q 닫기) |
 | **git init**                   | 생성                                                                              |
 | **git add**                    | 파일 담기                                                                         |
-| **git commit -m "massage"**    | 시지와 함께 commit 작성하기                                                       |
+| **git commit -m "massage"**    | 메시지와 함께 commit 작성하기                                                     |
 | **git clone**                  | 불러오기                                                                          |
 | **git push(pull) origin main** | push or pull 하기                                                                 |
 | **git stash**                  | 헷갈린당...,                                                                      |
