@@ -229,3 +229,46 @@ let var8 = 10;
 let res = var8 % 2 === 0 ? "짝수" : "홀수";
 console.log(res); // 짝수
 ```
+
+# 반복문 복습
+
+```js
+for (let idx = 1; idx <= 10; idx++) {
+  if (idx % 2 === 0) {
+    continue;
+  }
+  console.log(idx);
+
+  if (idx >= 5) {
+    break;
+  }
+}
+```
+
+# 함수
+
+```js
+let area1 = getArea(10, 20);
+console.log(area1);
+
+let area2 = getArea(30, 20);
+console.log(area2);
+
+getArea(120, 200);
+```
+
+호이스팅 -> 끌어올리다 라는 뜻
+
+```js
+function getArea(width, height) {
+  function another() {
+    // 중첩 함수
+    console.log("another");
+  }
+
+  another();
+  let area = width * height;
+
+  return area;
+}
+```
