@@ -153,7 +153,7 @@ console.log(numToStr1 + "입니다");
 // -> 20입니다
 ```
 
-    이제부터는 모르는 것만 기재하겠습니다 ......
+> # 이제부터는 모르는 것만 기재하겠습니다 ..!!!ㅜㅜ
 
 # 연산자
 
@@ -214,7 +214,7 @@ var7 = "hello";
 var7 = true;
 
 let t1 = typeof var7;
-console.log(t1); //boolean
+console.log(t1); // string
 ```
 
 ## 삼항 연산자
