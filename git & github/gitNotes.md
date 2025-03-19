@@ -21,12 +21,17 @@
 &nbsp;
 
 # Wap git 세미나
-## gitignore 
+
+## gitignore
+
 gitignore 안에 숨길 파일 이름을 적는거임... (ex) .env
+
 - 불필요 파일 제외
 - 코드 정리
 - 저장소 용량 절약
 - api 키 탈취 당하지 않게;;
+
 ## .github
-.github 안에 탬플릿을 적는거야 ;; ㄷㄷ   
+
+.github 안에 탬플릿을 적는거야 ;; ㄷㄷ  
 <img style="width:400px" src="CreatedTemplete.png"></img>
