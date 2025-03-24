@@ -134,3 +134,121 @@ function funcB(one, two, ...rest) {
 
 funcB(...arr1);
 ```
+
+## 배열 순회
+
+### for of 반복문
+
+```js
+let arr = [1, 2, 3];
+for (let item of arr) {
+  console.log(item);
+}
+```
+
+## 객체 순회
+
+```js
+let person = {
+  name: "이정환",
+  age: 27,
+  hobby: "테니스",
+};
+```
+
+### 1. Object.keys 사용
+
+객체에서 key 값들만 뽑아서 새로운 배열로 반환
+
+```js
+let keys = Object.keys(person);
+
+for (let key of keys) {
+  const value = person[key];
+  console.log(key, value);
+}
+```
+
+### 2. Object.values
+
+객체에서 value 값들만 뽑아서 새로운 배열로 반환
+
+```js
+let values = Object.values(person);
+
+for (let value of values) {
+  console.log(value);
+}
+```
+
+### 3. for in
+
+```js
+for (let key in person) {
+  const value = person[key];
+  console.log(key, value);
+}
+```
+
+> **배열를 순회할 때는 for of, 객체를 순회할 떄는 for in!!!**
+
+## 배열 요소 조작 메서드
+
+### 1. push
+
+push는 push되고 나면 해당 배열을 길이를 반환해줌... ㄷㄷ
+
+```js
+let a = [1, 2];
+const length = push.a(3, 4);
+console.log(length); // 4
+```
+
+### 2. pop
+
+```js
+let arr2 = [1, 2, 3];
+const poppedItem = arr2.pop(); // 3
+```
+
+### 3. shift
+
+맨 앞을 제거 반환
+
+```js
+let arr2 = [1, 2, 3];
+const poppedItem = arr2.shift(); // 1
+```
+
+### 4. unshift
+
+배열의 맨 앞에 새로운 요소를 추가하는 메서드
+
+```js
+let arr4 = [1, 2, 3];
+const newLength2 = arr4.unshift(0);
+```
+
+shift와 unshift는 push pop보다 느리게 동작함
+
+### 5. slice
+
+배열의 특정 범위를 잘라내서 새로운 배열로 반환
+
+```js
+let arr5 = [1, 2, 3, 4, 5];
+let sliced = arr5.slice(2, 5); // 3 4 5
+let sliced2 = arr5.slice(2); // 3 4 5
+let sliced3 = arr5.slice(-3); // 3 4 5
+```
+
+### 6. concat
+
+두개의 서로 다른 배열을 이어 붙여서 새로운 배열을 반환
+
+```js
+let arr6 = [1, 2];
+let arr7 = [3, 4];
+
+let concatedArr = arr6.concat(arr7); // 1, 2, 3, 4
+```
