@@ -1,4 +1,7 @@
-# 다시 정립할 것 간단히 정리
+다시 정립할 것을 간단히 정리힘
+section 1은 파이썬 기본 세팅을 알려줘서 2부터 시작~!
+
+# Section 2
 ## Python REPL (대화형 인터프리터)
 파이썬 코드를 한 줄씩 입력하고, 실행 결과를 즉시 확인할 수 있는 대화형 실행 환경
 - Read: 코드를 읽고
@@ -76,30 +79,3 @@ def factorial(n):
 - 프로세스 내부에서 실행되는 작업의 단위
 - 하나의 프로세스에 여러 스레드가 존재할 수 있음
 - 같은 프로세스의 스레드끼리는 메모리를 공유함
-
-## 코드
-
-### 수학 연산자
-```py
-# floor division(소수점을 없앰)
-print(7 // 2)
-```
-
-### f-string
-```py
-# 과거 스타일
-name = "Joon"
-age = 30
-print("Hello, %s." % name)
-print("Hello, %s, I am %s" % (name, age))
-
-# Python 2.6
-print("Hello, {}. I am {}.".format(name, age))
-print("Hello, {1}. I am {0}.".format(age, name))
-
-# Python 3.6
-person = {'name': 'Joon', 'age': 17}
-print(f"Hello, {name}. I am {age}.")
-print(F"Hello, {name}. I am {age}.")
-print(f"{name.lower()} is cool.")
-```
